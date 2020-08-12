@@ -16,6 +16,6 @@
 
     <string name="recovery_rate">Recovery Rate: %s</string>
     <string name="case_fatality_rate">Case Fatality Rate: %s</string>
-    <string name="numbers_text">All numbers are based on the <a href="https://covid19api.com/">Covid19 API</a> which itself is based on data from  <a href="https://github.com/CSSEGISandData/COVID-19">Johns Hopkins CSSE.</a> Not all numbers will be 100% accurate so always take the displayed rankings with a grain of salt.</string>
+    <string name="numbers_text">All numbers are based on the <a href="https://covid19api.com/">Covid19 API</a> which itself is based on data from  <a href="https://github.com/CSSEGISandData/COVID-19">Johns Hopkins CSSE.</a> Not all numbers will be 100% accurate so always take the displayed rankings and numbers with a grain of salt.</string>
     <string name="app_text"><![CDATA[I built this App in order to learn Kotlin. In order to ensure transparency of the numbers the entire source code is available on GitHub.<br/><br/>Icons powered by  <a href="https://icons8.de/">icons8</a>. Usage <a href="https://icons8.com/license">is permitted via linking.</a><br/>All liability is excluded.<br/>All rights reserved.<br/>]]></string>
 </resources>
