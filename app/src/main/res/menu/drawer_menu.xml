@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/explanations"
+        android:title="Explanations">
+        <menu>
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/numbersInfoFragment"
+                    android:checkable="false"
+                    android:icon="@drawable/ic_numbers"
+                    android:menuCategory="secondary"
+                    android:title="About the Numbers" />
+
+                <item
+                    android:id="@+id/appInfoFragment"
+                    android:checkable="false"
+                    android:icon="@drawable/ic_baseline_dashboard_24"
+                    android:menuCategory="secondary"
+                    android:title="About the App" />
+
+            </group>
+        </menu>
+    </item>
+
+  <!--  <item
+        android:id="@+id/support"
+        android:title="Support Me">
+        <menu>
+            <item
+                android:id="@+id/at"
+                android:icon="@drawable/ic_baseline_rate_review_24"
+                android:menuCategory="secondary"
+                android:title="Rate the App" />
+        </menu>
+    </item>-->
+
+
+</menu>

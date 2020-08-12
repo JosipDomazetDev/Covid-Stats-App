@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dashFragment">
+    <fragment
+        android:id="@+id/dashFragment"
+        android:name="com.covidstats.covidstats.ui.DashFragment"
+        android:label="National"
+        tools:layout="@layout/fragment_dash" >
+        <action
+            android:id="@+id/action_dashFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/globalFragment"
+        android:name="com.covidstats.covidstats.ui.GlobalFragment"
+        android:label="Global" />
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.covidstats.covidstats.ui.DetailFragment"
+        android:label="All Stats" />
+    <fragment
+        android:id="@+id/numbersInfoFragment"
+        android:name="com.covidstats.covidstats.ui.NumbersInfoFragment"
+        android:label="About the Numbers" />
+    <fragment
+        android:id="@+id/appInfoFragment"
+        android:name="com.covidstats.covidstats.ui.AppInfoFragment"
+        android:label="About the App" />
+
+</navigation>

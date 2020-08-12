@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Covid Stats</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="date_of_last_update_global"><![CDATA[<b>Last Update:</b> %1$s]]></string>
+    <string name="unknown_global">Unknown</string>
+    <string name="number_pos">%s (%d.)</string>
+    <string name="total_cases">Total Cases: %s</string>
+    <string name="total_recovered">Total Recovered: %s</string>
+    <string name="total_deaths">Total Deaths: %s</string>
+    <string name="active_cases">Active Cases: %s</string>
+
+    <string name="new_cases">New Cases: %s</string>
+    <string name="new_recovered">New Recovered: %s</string>
+    <string name="new_deaths">New Deaths: %s</string>
+
+    <string name="recovery_rate">Recovery Rate: %s</string>
+    <string name="case_fatality_rate">Case Fatality Rate: %s</string>
+    <string name="numbers_text">All numbers are based on the <a href="https://covid19api.com/">Covid19 API</a> which itself is based on data from  <a href="https://github.com/CSSEGISandData/COVID-19">Johns Hopkins CSSE.</a> Not all numbers will be 100% accurate so always take the displayed rankings with a grain of salt.</string>
+    <string name="app_text"><![CDATA[I built this App in order to learn Kotlin. In order to ensure transparency of the numbers the entire source code is available on GitHub.<br/><br/>Icons powered by  <a href="https://icons8.de/">icons8</a>. Usage <a href="https://icons8.com/license">is permitted via linking.</a><br/>All liability is excluded.<br/>All rights reserved.<br/>]]></string>
+</resources>

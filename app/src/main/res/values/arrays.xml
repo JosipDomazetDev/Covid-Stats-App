@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sort">
+        <item>Total Cases</item>
+        <item>Total Recovered</item>
+        <item>Total Deaths</item>
+        <item>Active Cases</item>
+
+        <item>New Cases</item>
+        <item>New Recovered</item>
+        <item>New Deaths</item>
+
+        <item>Recovery Rate</item>
+        <item>Case Fatality Rate</item>
+    </string-array>
+
+</resources>
