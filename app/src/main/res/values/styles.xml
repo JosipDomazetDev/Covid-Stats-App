@@ -43,7 +43,7 @@
     <style name="NavigationStyle" parent="Widget.Design.NavigationView">
         <item name="android:textColorPrimary">@color/white</item>
         <item name="android:textColorSecondary">@color/white</item>
-        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:background">#2c2b2b</item>
     </style>
 
 </resources>

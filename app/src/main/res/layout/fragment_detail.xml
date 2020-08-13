@@ -47,10 +47,24 @@
                 android:layout_marginStart="4dp"
                 android:layout_marginTop="4dp"
                 android:layout_toEndOf="@id/imageView_detail"
-                android:text="@{@string/new_deaths(detailViewModel.getEntry(context,SortCategory.NEW_DEATHS))}"
-                android:textColor="@color/colorRecyclerViewTextView_red"
+                android:text="@string/new_deaths"
+                android:textColor="@color/colorRecyclerViewTextView"
                 android:textSize="19sp"
                 app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/country_textview_detail_new_recovered" />
+
+
+            <TextView
+                android:id="@+id/country_textview_detail_new_deaths_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_toEndOf="@id/imageView_detail"
+                android:text="@{detailViewModel.getEntry(context,SortCategory.NEW_DEATHS)}"
+                android:textColor="@color/colorRecyclerViewTextView_red"
+                android:textSize="19sp"
+                app:layout_constraintStart_toEndOf="@+id/country_textview_detail_new_deaths"
                 app:layout_constraintTop_toBottomOf="@+id/country_textview_detail_new_recovered" />
 
 
@@ -69,16 +83,29 @@
 
 
             <TextView
-                android:id="@+id/country_textview_detail9"
+                android:id="@+id/country_textview_detail_recovery_rate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="4dp"
                 android:layout_marginTop="8dp"
                 android:layout_toEndOf="@id/imageView_detail"
-                android:text="@{@string/recovery_rate(detailViewModel.getEntry(context,SortCategory.RECOVERY_RATE))}"
-                android:textColor="@color/colorRecyclerViewTextView_green"
+                android:text="@string/recovery_rate"
+                android:textColor="@color/colorRecyclerViewTextView"
                 android:textSize="19sp"
                 app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/country_textview_detail_outcomes" />
+
+            <TextView
+                android:id="@+id/country_textview_detail_recovery_rate_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="8dp"
+                android:layout_toEndOf="@id/imageView_detail"
+                android:text="@{detailViewModel.getEntry(context,SortCategory.RECOVERY_RATE)}"
+                android:textColor="@color/colorRecyclerViewTextView_green"
+                android:textSize="19sp"
+                app:layout_constraintStart_toEndOf="@+id/country_textview_detail_recovery_rate"
                 app:layout_constraintTop_toBottomOf="@id/country_textview_detail_outcomes" />
 
 
@@ -89,11 +116,25 @@
                 android:layout_marginStart="4dp"
                 android:layout_marginTop="4dp"
                 android:layout_toEndOf="@id/imageView_detail"
-                android:text="@{@string/case_fatality_rate(detailViewModel.getEntry(context,SortCategory.LETHALITY_RATE))}"
+                android:text="@string/case_fatality_rate"
                 android:textColor="@color/colorRecyclerViewTextView_red"
                 android:textSize="19sp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/country_textview_detail9" />
+                app:layout_constraintTop_toBottomOf="@+id/country_textview_detail_recovery_rate" />
+
+
+            <TextView
+                android:id="@+id/country_textview_detail_case_fatality_rate_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_toEndOf="@id/imageView_detail"
+                android:text="@{detailViewModel.getEntry(context,SortCategory.LETHALITY_RATE)}"
+                android:textColor="@color/colorRecyclerViewTextView_red"
+                android:textSize="19sp"
+                app:layout_constraintStart_toEndOf="@+id/country_textview_detail_case_fatality_rate"
+                app:layout_constraintTop_toBottomOf="@+id/country_textview_detail_recovery_rate" />
 
 
             <TextView
@@ -116,10 +157,23 @@
                 android:layout_marginStart="4dp"
                 android:layout_marginTop="8dp"
                 android:layout_toEndOf="@id/imageView_detail"
-                android:text="@{@string/total_cases(detailViewModel.getEntry(context,SortCategory.TOTAL_CASES))}"
-                android:textColor="@color/colorRecyclerViewTextView_red"
+                android:text="@string/total_cases"
+                android:textColor="@color/colorRecyclerViewTextView"
                 android:textSize="19sp"
                 app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/country_textview_detail_overall_dev" />
+
+            <TextView
+                android:id="@+id/country_textview_detail_total_cases_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="8dp"
+                android:layout_toEndOf="@id/imageView_detail"
+                android:text="@{detailViewModel.getEntry(context,SortCategory.TOTAL_CASES)}"
+                android:textColor="@color/colorRecyclerViewTextView_red"
+                android:textSize="19sp"
+                app:layout_constraintStart_toEndOf="@+id/country_textview_detail_total_cases"
                 app:layout_constraintTop_toBottomOf="@+id/country_textview_detail_overall_dev" />
 
 
@@ -130,10 +184,24 @@
                 android:layout_marginStart="4dp"
                 android:layout_marginTop="4dp"
                 android:layout_toEndOf="@id/imageView_detail"
-                android:text="@{@string/total_recovered(detailViewModel.getEntry(context,SortCategory.TOTAL_RECOVERED))}"
-                android:textColor="@color/colorRecyclerViewTextView_green"
+                android:text="@string/total_recovered"
+                android:textColor="@color/colorRecyclerViewTextView"
                 android:textSize="19sp"
                 app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/country_textview_detail_total_cases" />
+
+
+            <TextView
+                android:id="@+id/country_textview_detail_total_recovered_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_toEndOf="@id/imageView_detail"
+                android:text="@{detailViewModel.getEntry(context,SortCategory.TOTAL_RECOVERED)}"
+                android:textColor="@color/colorRecyclerViewTextView_green"
+                android:textSize="19sp"
+                app:layout_constraintStart_toEndOf="@+id/country_textview_detail_total_recovered"
                 app:layout_constraintTop_toBottomOf="@+id/country_textview_detail_total_cases" />
 
 
@@ -144,10 +212,24 @@
                 android:layout_marginStart="4dp"
                 android:layout_marginTop="4dp"
                 android:layout_toEndOf="@id/imageView_detail"
-                android:text="@{@string/total_deaths(detailViewModel.getEntry(context,SortCategory.TOTAL_DEATHS))}"
-                android:textColor="@color/colorRecyclerViewTextView_red"
+                android:text="@string/total_deaths"
+                android:textColor="@color/colorRecyclerViewTextView"
                 android:textSize="19sp"
                 app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/country_textview_detail_total_recovered" />
+
+
+            <TextView
+                android:id="@+id/country_textview_detail_total_deaths_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_toEndOf="@id/imageView_detail"
+                android:text="@{detailViewModel.getEntry(context,SortCategory.TOTAL_DEATHS)}"
+                android:textColor="@color/colorRecyclerViewTextView_red"
+                android:textSize="19sp"
+                app:layout_constraintStart_toEndOf="@+id/country_textview_detail_total_deaths"
                 app:layout_constraintTop_toBottomOf="@+id/country_textview_detail_total_recovered" />
 
             <TextView
@@ -157,10 +239,23 @@
                 android:layout_marginStart="4dp"
                 android:layout_marginTop="4dp"
                 android:layout_toEndOf="@id/imageView_detail"
-                android:text="@{@string/active_cases(detailViewModel.getEntry(context,SortCategory.ACTIVE_CASES))}"
+                android:text="@string/active_cases"
                 android:textColor="@color/colorRecyclerViewTextView"
                 android:textSize="19sp"
                 app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/country_textview_detail_total_deaths" />
+
+            <TextView
+                android:id="@+id/country_textview_detail_active_cases_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_toEndOf="@id/imageView_detail"
+                android:text="@{detailViewModel.getEntry(context,SortCategory.ACTIVE_CASES)}"
+                android:textColor="@color/colorRecyclerViewTextView"
+                android:textSize="19sp"
+                app:layout_constraintStart_toEndOf="@+id/country_textview_detail_active_cases"
                 app:layout_constraintTop_toBottomOf="@+id/country_textview_detail_total_deaths" />
 
             <TextView
@@ -184,10 +279,24 @@
                 android:layout_marginStart="4dp"
                 android:layout_marginTop="8dp"
                 android:layout_toEndOf="@id/imageView_detail"
-                android:text="@{@string/new_cases(detailViewModel.getEntry(context,SortCategory.NEW_CASES))}"
-                android:textColor="@color/colorRecyclerViewTextView_red"
+                android:text="@string/new_cases"
+                android:textColor="@color/colorRecyclerViewTextView"
                 android:textSize="19sp"
                 app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/country_textview_detail_recent_trend" />
+
+
+            <TextView
+                android:id="@+id/country_textview_detail_new_cases_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="8dp"
+                android:layout_toEndOf="@id/imageView_detail"
+                android:text="@{detailViewModel.getEntry(context,SortCategory.NEW_CASES)}"
+                android:textColor="@color/colorRecyclerViewTextView_red"
+                android:textSize="19sp"
+                app:layout_constraintStart_toEndOf="@+id/country_textview_detail_new_cases"
                 app:layout_constraintTop_toBottomOf="@+id/country_textview_detail_recent_trend" />
 
 
@@ -198,12 +307,24 @@
                 android:layout_marginStart="4dp"
                 android:layout_marginTop="4dp"
                 android:layout_toEndOf="@id/imageView_detail"
-                android:text="@{@string/new_recovered(detailViewModel.getEntry(context,SortCategory.NEW_RECOVERED))}"
-                android:textColor="@color/colorRecyclerViewTextView_green"
+                android:text="@string/new_recovered"
+                android:textColor="@color/colorRecyclerViewTextView"
                 android:textSize="19sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/country_textview_detail_new_cases" />
 
+            <TextView
+                android:id="@+id/country_textview_detail_new_recovered_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_toEndOf="@id/imageView_detail"
+                android:text="@{detailViewModel.getEntry(context,SortCategory.NEW_RECOVERED)}"
+                android:textColor="@color/colorRecyclerViewTextView_green"
+                android:textSize="19sp"
+                app:layout_constraintStart_toEndOf="@+id/country_textview_detail_new_recovered"
+                app:layout_constraintTop_toBottomOf="@+id/country_textview_detail_new_cases" />
 
             <View
                 android:id="@+id/sep2"
@@ -238,6 +359,8 @@
     </ScrollView>
 
     <data>
+
+        <import type="android.text.Html" />
 
         <import type="com.covidstats.covidstats.models.SortCategory" />
 
