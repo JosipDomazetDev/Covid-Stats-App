@@ -269,12 +269,17 @@ public class Country {
         return String.format(imageURL, countryCode);
     }
 
-    public boolean containsForSearch(@NotNull String searchMsgAsString) {
-        if (getDisplayName().toLowerCase().trim().contains(searchMsgAsString)) return true;
-        if (slug.toLowerCase().trim().contains(searchMsgAsString)) return true;
-        if (country.toLowerCase().trim().contains(searchMsgAsString)) return true;
+    public boolean containsForSearch(@NotNull List<String> searchMessagesAsString) {
+        for (String searchMsgAsString : searchMessagesAsString) {
+            searchMsgAsString = searchMsgAsString.trim();
+            if (searchMsgAsString.isEmpty()) return false;
 
-        return countryCode.toLowerCase().trim().contains(searchMsgAsString);
+            if (getDisplayName().toLowerCase().trim().contains(searchMsgAsString)) return true;
+            if (slug.toLowerCase().trim().contains(searchMsgAsString)) return true;
+            if (country.toLowerCase().trim().contains(searchMsgAsString)) return true;
+            if (countryCode.toLowerCase().trim().contains(searchMsgAsString)) return true;
+        }
+        return false;
     }
 
 

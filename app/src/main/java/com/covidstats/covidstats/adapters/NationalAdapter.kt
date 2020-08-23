@@ -101,10 +101,6 @@ class NationalAdapter(
         }
     }
 
-    fun replaceList(newSortedCountries: List<Country>) {
-        /*  contentList = newSortedCountries*/
-    }
-
 
     private val countryFilter: Filter = object : Filter() {
 
@@ -116,8 +112,10 @@ class NationalAdapter(
             } else {
                 val searchMsgAsString = searchMsg.toString().toLowerCase(Locale.ROOT).trim()
 
+
+
                 for (country in contentListFull) {
-                    if (country.containsForSearch(searchMsgAsString)) {
+                    if (country.containsForSearch(searchMsgAsString.split("&&"))) {
                         filteredList.add(country)
                     }
                 }
