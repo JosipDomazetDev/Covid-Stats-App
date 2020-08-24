@@ -19,3 +19,7 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+-keepattributes Signature -keep class sun.misc.Unsafe { *; } -keep class com.covidstats.covidstats.models.Country { *; }
+-keepattributes Signature -keep class sun.misc.Unsafe { *; } -keep class com.covidstats.covidstats.models.Summary { *; }
+-keepattributes Signature -keep class sun.misc.Unsafe { *; } -keep class com.covidstats.covidstats.models.Premium { *; }
+-keepattributes Signature -keep class sun.misc.Unsafe { *; } -keep class com.covidstats.covidstats.models.Global { *; }

@@ -1,7 +1,6 @@
 package com.covidstats.covidstats.ui
 
 import android.os.Bundle
-import android.util.Log
 import android.view.*
 import android.view.inputmethod.EditorInfo
 import android.widget.AdapterView
@@ -78,7 +77,6 @@ class DashFragment : Fragment(), NationalAdapter.OnItemClickListener {
                         )
                     }) as MutableList<Country>
 
-
                     displayList(newSortedCountries)
                     progress_bar_dash.visibility = View.GONE
                     swipe_refresh_dash.isEnabled = false
@@ -97,8 +95,6 @@ class DashFragment : Fragment(), NationalAdapter.OnItemClickListener {
                 errorHandler.reset();
 
         })
-
-        Log.e("XXXX", viewModel.hashCode().toString())
 
 
         val sortCategories = initSortCategories()
@@ -143,7 +139,11 @@ class DashFragment : Fragment(), NationalAdapter.OnItemClickListener {
         swipe_refresh_dash.setOnRefreshListener {
             when {
                 viewModel.getSummary().value?.status == Status.SUCCESS -> {
-                    Toast.makeText(context, "Data loaded successfully, no need to reload!", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(
+                        context,
+                        "Data loaded successfully, no need to reload!",
+                        Toast.LENGTH_SHORT
+                    ).show()
                 }
 
                 searchView.isIconified -> {

@@ -34,7 +34,7 @@ class DashViewModel : ViewModel() {
 
     fun reload() {
         if (summaryLiveData.value?.status != Status.LOADING) {
-             DashRepository.reloadSummary()
+            DashRepository.reloadSummary()
         }
     }
 }

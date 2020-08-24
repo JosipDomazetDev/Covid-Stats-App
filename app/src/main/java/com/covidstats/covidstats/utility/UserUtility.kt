@@ -1,12 +1,9 @@
 package com.covidstats.covidstats.utility
 
 
-import android.R
 import android.app.Activity
 import android.view.View
 import android.view.inputmethod.InputMethodManager
-import com.google.android.material.navigation.NavigationView
-import java.util.*
 
 
 class UserUtility private constructor() {

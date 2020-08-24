@@ -7,7 +7,6 @@ import android.widget.TextView
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.covidstats.covidstats.models.GlobalEntry
-import com.covidstats.covidstats.utility.StringUtility
 import com.covidstats.sovid.R
 import kotlinx.android.synthetic.main.recyclerview_global_entry.view.*
 

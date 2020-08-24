@@ -74,4 +74,15 @@ public class Global {
     }
 
 
+    @Override
+    public String toString() {
+        return "Global{" +
+                "newConfirmed=" + newConfirmed +
+                ", totalConfirmed=" + totalConfirmed +
+                ", newDeaths=" + newDeaths +
+                ", totalDeaths=" + totalDeaths +
+                ", newRecovered=" + newRecovered +
+                ", totalRecovered=" + totalRecovered +
+                '}';
+    }
 }

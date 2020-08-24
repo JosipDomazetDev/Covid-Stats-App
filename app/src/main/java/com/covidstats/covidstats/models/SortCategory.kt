@@ -18,7 +18,7 @@ class SortCategory(var type: Int, var name: String) {
 
 
     companion object {
-       const val TOTAL_CASES: Int = 2
+        const val TOTAL_CASES: Int = 2
         const val TOTAL_RECOVERED: Int = 4
         const val TOTAL_DEATHS: Int = 8
         const val ACTIVE_CASES: Int = 16

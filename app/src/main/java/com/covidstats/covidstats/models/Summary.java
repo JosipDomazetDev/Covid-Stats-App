@@ -44,4 +44,12 @@ public class Summary {
     }
 
 
+    @Override
+    public String toString() {
+        return "Summary{" +
+                "global=" + global.toString() +
+                ", countries=" + countries.get(2).getSlug() +
+                ", date='" + date + '\'' +
+                '}';
+    }
 }

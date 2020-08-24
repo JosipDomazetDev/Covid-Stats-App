@@ -2,14 +2,13 @@
 package com.covidstats.covidstats.models;
 
 
+import com.covidstats.covidstats.utility.FromFuture;
 import com.covidstats.covidstats.utility.StringUtility;
-import com.covidstats.covidstats.utility.*;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 import org.jetbrains.annotations.NotNull;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;

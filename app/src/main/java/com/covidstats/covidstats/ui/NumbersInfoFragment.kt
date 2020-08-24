@@ -5,10 +5,8 @@ import android.text.method.LinkMovementMethod
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.fragment.app.Fragment
 import com.covidstats.sovid.R
-import kotlinx.android.synthetic.main.fragment_app_info.*
 import kotlinx.android.synthetic.main.fragment_numbers_info.*
 
 /**

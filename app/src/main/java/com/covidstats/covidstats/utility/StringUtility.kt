@@ -1,7 +1,6 @@
 package com.covidstats.covidstats.utility
 
 
-import java.text.DateFormat
 import java.text.DecimalFormat
 import java.text.DecimalFormatSymbols
 import java.text.SimpleDateFormat

@@ -1,7 +1,6 @@
 package com.covidstats.covidstats.ui
 
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -13,7 +12,6 @@ import androidx.navigation.navGraphViewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.covidstats.covidstats.adapters.GlobalAdapter
 import com.covidstats.covidstats.errorhandling.ErrorHandler
-import com.covidstats.covidstats.models.Global
 import com.covidstats.covidstats.models.GlobalEntry
 import com.covidstats.covidstats.utility.StringUtility
 import com.covidstats.covidstats.viewmodels.DashViewModel
@@ -21,14 +19,12 @@ import com.covidstats.covidstats.wrappers.Status
 import com.covidstats.sovid.R
 import kotlinx.android.synthetic.main.fragment_dash.*
 import kotlinx.android.synthetic.main.global_fragment.*
-import kotlin.math.roundToInt
 
 class GlobalFragment : Fragment(), GlobalAdapter.OnItemClickListener {
 
     companion object {
         fun newInstance() = GlobalFragment()
     }
-
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -59,15 +55,11 @@ class GlobalFragment : Fragment(), GlobalAdapter.OnItemClickListener {
         val errorHandler = ErrorHandler(requireContext(), dateTextView_global)
 
 
-        /*   val viewModel2: DashViewModel
-                   by navGraphViewModels(R.id.nav_graph)
-
-           viewModel = ViewModelProvider(this).get(DashViewModel::class.java)*/
-
         viewModel.getSummary().observe(viewLifecycleOwner, Observer {
             when (it.status) {
                 Status.SUCCESS -> {
                     val global = it.data?.global
+
 
                     dateTextView_global.text = (HtmlCompat.fromHtml(
                         getString(
@@ -78,7 +70,6 @@ class GlobalFragment : Fragment(), GlobalAdapter.OnItemClickListener {
 
                     val totDeath: Double = global?.totalDeaths?.toDouble() ?: 0.0
                     val totConf: Double = global?.totalConfirmed?.toDouble() ?: 1.0
-                    val totRec: Double = global?.totalRecovered?.toDouble() ?: 0.0
                     val peopleInTheWorld = 7802005691.0
 
 
@@ -118,13 +109,6 @@ class GlobalFragment : Fragment(), GlobalAdapter.OnItemClickListener {
                         )
                     )
 
-                    /*globalStats.add(
-                        GlobalEntry(
-                            "Still Pending",
-                            "$penRate%",
-                            GlobalEntry.NEUTRAL
-                        )
-                    )*/
 
                     globalStats.add(
                         GlobalEntry(
@@ -180,8 +164,7 @@ class GlobalFragment : Fragment(), GlobalAdapter.OnItemClickListener {
 
 
 
-
-
+                    adapter.notifyDataSetChanged()
                     dateTextView_global.visibility = View.VISIBLE
                     progress_bar_global.visibility = View.GONE
                     swipe_refresh_global.isEnabled = false
