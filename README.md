@@ -1,4 +1,4 @@
-# Covid-Stats-App
+#  <img src="/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" alt="Covid Stats logo" width="40" height="40" align="center"/> Covid-Stats-App
 
 Covid Stats is an app that enables users to track global Covid stats. There are 9
 different stats that can be viewed including more interesting ones like fatality rates.
