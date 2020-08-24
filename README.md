@@ -6,4 +6,4 @@ The data is sourced from Johns Hopkins CSSE and is provided by the [Covid API](h
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=pQ_T457ort4
 " target="_blank"><img src="http://img.youtube.com/vi/pQ_T457ort4/0.jpg" 
-alt="App Showcase" width="900" height="506" border="10" /></a>
+alt="App Showcase" width="400" height="206" border="10" /></a>
